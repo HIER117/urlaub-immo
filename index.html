@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -482,7 +480,36 @@ input[type="checkbox"] {
     font-size: 1rem;
   }
 }
+.btn-mobile {
+    display: inline-block;
+    background: #d4af37; /* Gold */
+    color: #1c1c1e; /* Dunkler Text */
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
 
+  .btn-mobile:hover {
+    background: #b8922c; /* etwas dunkleres Gold */
+    color: white;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .btn-mobile {
+      display: block;
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 1rem;
+    }
+  }
   </style>
 </head>
 
@@ -542,13 +569,11 @@ input[type="checkbox"] {
       </p>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="#kontakt" class="btn btn-primary">Jetzt Reise anfragen</a>
-      </div>
+  <a href="#kontakt" class="btn-mobile">Jetzt Reise anfragen</a>
+</div>
     </div>
   </div>
 </section>
-
-
   <section id="leistungen">
     <h2>Leistungen</h2>
     <div class="leistungen-grid">
@@ -595,7 +620,6 @@ input[type="checkbox"] {
 
   </div>
 </section>
-
 <style>
   .ablauf-tag {
     background: #1e1e1e;
@@ -637,9 +661,6 @@ input[type="checkbox"] {
     }
   }
 </style>
-
-
- 
   </section>
 
   <section id="immobilien" class="fade-in">
@@ -728,7 +749,7 @@ input[type="checkbox"] {
   </div>
 </section>
 <footer style="background:#111; color:#ccc; text-align:center; padding:2rem; font-size:0.9rem;">
-  <p>© 2025 HIER.immo GmbH – Immobilienurlaub in der Türkei</p>
+  <p>© 2025 HIER.immo – Besichtigungsurlaub in der Türkei</p>
   <p>Standort: Neuhausen, München</p>
   <p><a href="https://HIER117.github.io/urlaub-immo/impressum" target="_blank">Impressum</a> | <a href="https://HIER117.github.io/urlaub-immo/Datenschutz.html" target="_blank">Datenschutz</a></p>
 </footer>
